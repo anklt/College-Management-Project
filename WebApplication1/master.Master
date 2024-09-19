@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>MUS University</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <!-- DataTables CSS -->
+    <link href="datatables/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    
+    <!-- FontAwesome CSS -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    
+    <!-- Custom CSS (Optional) -->
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
+    <!-- jQuery (required for Bootstrap JS) -->
+    <script src="jquery/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="homepage.aspx">
+                <img src="imgs/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.aspx">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login </a>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                       </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="adminlogin.aspx">Admin Login</a>
+                     </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Placeholder -->
+        <div class="container mt-4">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        
+<footer class="bg-light text-center text-lg-start mt-4">
+    <div id="footer1" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                
+            </div>
+        </div>
+                © 2024 All Rights Reserved. <a href="#" class="text-dark" target="_blank">Ankit & Manav</a>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

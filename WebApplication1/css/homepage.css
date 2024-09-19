@@ -1,0 +1,222 @@
+﻿/* Background */
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Light blue gradient background */
+    color: #333333; /* Darker shade of black for all text */
+}
+
+/* Jumbotron */
+.jumbotron {
+    background: rgba(255, 255, 255, 0.8); /* Light semi-transparent background */
+    color: #333333; /* Darker text color */
+    border-radius: 10px;
+    padding: 3rem;
+    transition: background 0.5s ease-in-out;
+}
+
+    .jumbotron h1 {
+        color: #004080; /* Dark blue for heading */
+    }
+
+    .jumbotron:hover {
+        background: rgba(255, 255, 255, 0.9); /* Slightly more opaque on hover */
+    }
+
+/* Highlight Boxes */
+.highlight-box {
+    background: rgba(240, 240, 240, 0.9); /* Light gray */
+    border-radius: 10px;
+    padding: 2rem;
+    color: #333333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center; /* Center text and icons */
+    margin-bottom: 30px; /* Ensure margin below for better spacing */
+}
+
+    .highlight-box h2 {
+        color: #004080; /* Dark blue for section titles */
+    }
+
+    .highlight-box:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/* FontAwesome Icons */
+.fa-2x, .fa-3x {
+    color: #FFD700; /* Gold color for icons */
+    margin-bottom: 15px; /* Add margin below icon */
+    transition: color 0.3s ease-in-out;
+}
+
+    .fa-2x:hover, .fa-3x:hover {
+        color: #004080; /* Dark blue on hover */
+    }
+
+/* Button Styles */
+.btn-primary, .btn-secondary, .btn-outline-light {
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #004080; /* Dark blue for primary buttons */
+    color: #ffffff;
+}
+
+    .btn-primary:hover {
+        background-color: #003366; /* Darker blue on hover */
+        color: #ffffff;
+    }
+
+.btn-secondary {
+    background-color: #00539C; /* Slightly lighter blue for secondary buttons */
+    color: #ffffff;
+}
+
+    .btn-secondary:hover {
+        background-color: #003d80; /* Darker blue on hover */
+    }
+
+.btn-outline-light {
+    border-color: #004080;
+    color: #004080;
+}
+
+    .btn-outline-light:hover {
+        background-color: #004080;
+        color: #ffffff;
+    }
+
+/* Campus Life Section */
+h2 {
+    color: #004080; /* Dark blue for section headers */
+}
+
+p {
+    color: #333333; /* Black text for readability */
+}
+
+/* Features Section */
+.row .col-md-4 h3 {
+    color: #004080; /* Dark blue for the headers */
+}
+
+.row .col-md-4 p {
+    color: #333333; /* Black text for readability */
+}
+
+.row .col-md-4 a {
+    color: #004080; /* Dark blue for links */
+    border-color: #004080;
+}
+
+    .row .col-md-4 a:hover {
+        background-color: #004080; /* Blue background on hover */
+        color: #ffffff; /* White text on hover */
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem;
+    }
+
+    .highlight-box {
+        padding: 1.5rem;
+    }
+
+    /* Stack feature boxes vertically */
+    .row .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Smooth Transitions */
+* {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Icons with bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.fa-3x {
+    animation: bounce 2s infinite;
+}
+
+/* Fade-in effect for sections */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, visibility 0.6s;
+}
+
+    .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+/* Centered Content */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* General Styling for Buttons */
+.btn {
+    margin-top: 15px;
+}
+
+/* Parallax Effect */
+.parallax {
+
+    background-image: url('../imgs/paralx2.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    color: #ffffff;
+}
+
+    .parallax h1, .parallax p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+/* Background Box with Image */
+.background-box {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
